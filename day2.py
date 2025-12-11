@@ -50,6 +50,8 @@ def puzzle_two(data):
                     invalid_ids.add(i)
     return sum(invalid_ids)
 
+print("Running Day 2 solutions:")
+
 with open(os.path.join("data_files", "day_2", "example.txt")) as f:
     data = f.readline().split(',')
     print(f"Example puzzle one: {puzzle_one(data)}")

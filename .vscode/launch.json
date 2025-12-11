@@ -1,0 +1,111 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "AOC Day 1",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day1.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 2",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day2.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 3",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day3.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 4",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day4.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 5",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day5.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 6",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day6.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 7",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day7.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 8",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day8.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 9",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day9.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 10",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day10.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 11",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day11.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "AOC Day 12",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/day12.py",
+            "console": "integratedTerminal"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "AOC All Days",
+            "configurations": [
+                "AOC Day 1",
+                "AOC Day 2",
+                "AOC Day 3",
+                "AOC Day 4",
+                "AOC Day 5",
+                "AOC Day 6",
+                "AOC Day 7",
+                "AOC Day 8",
+                "AOC Day 9",
+                "AOC Day 10",
+                "AOC Day 11",
+                "AOC Day 12"
+            ]
+        }
+    ]
+}

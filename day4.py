@@ -28,6 +28,7 @@ def puzzle_one(data):
 def puzzle_two(data):
     pass
 
+print("Running Day 4 solutions:")
 with open(os.path.join("data_files", "day_4", "example.txt")) as f:
     data = [x.strip() for x in f.readlines()]
     start = time.time()

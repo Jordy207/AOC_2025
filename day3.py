@@ -32,7 +32,7 @@ def puzzle_two(data):
 
     return result
     
-
+print("Running Day 3 solutions:")
 with open(os.path.join("data_files", "day_3", "example.txt")) as f:
     data = f.readlines()
     start = time.time()

@@ -50,6 +50,7 @@ def puzzle_two(data):
         ret_val += 1
     return ret_val
 
+print("Running Day 1 solutions:")
 
 with open(os.path.join("data_files", "day_1", "example.txt")) as f:
     data = f.readlines()
