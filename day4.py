@@ -5,7 +5,7 @@ def puzzle_one(data):
     x_size = len(data[0])
     y_size = len(data)
     result = 0
-    # papers = []
+    papers = []
     for y, data_row in enumerate(data):
         for x in range(x_size):
             if data_row[x] == '@':
@@ -19,14 +19,20 @@ def puzzle_one(data):
                 papers_seen += sum(nine_by_nine.count('@') for nine_by_nine in nine_by_nine)
                 if papers_seen < 4:
                     result += 1
-                    # papers.append((y, x))
-    # for x,y in papers:
-    #     data[x] = data[x][:y] + 'x' + data[x][y+1:]
-    # print('\n'.join(''.join(row) for row in data))
-    return result
+                    papers.append((y, x))
+    for x,y in papers:
+        data[x] = data[x][:y] + 'x' + data[x][y+1:]
+    print('\n'.join(''.join(row) for row in data))
+    return result, data
               
 def puzzle_two(data):
-    pass
+    total = 0
+    while True:
+        result, data = puzzle_one(data)
+        total += result
+        if result == 0:
+            break
+    return total
 
 print("Running Day 4 solutions:")
 with open(os.path.join("data_files", "day_4", "example.txt")) as f:
