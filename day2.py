@@ -1,3 +1,4 @@
+from itertools import batched
 import math
 import os
 import time 
@@ -39,11 +40,12 @@ def puzzle_two(data):
             divisors_string = list(divisors[len(str_id)])
             del divisors_string[0]  # remove 1
             for divisor in divisors_string:
-                parts_divisor = list()
-                for part in range(int(divisor)):
-                    idx_start = part*int(len(str_id)/divisor)
-                    idx_end = (part+1)*int(len(str_id)/divisor)
-                    parts_divisor.append(str_id[idx_start:idx_end])
+                parts_divisor = list(batched(str_id, int(len(str_id)/divisor)))
+                # parts_divisor = list()
+                # for part in range(int(divisor)):
+                #     idx_start = part*int(len(str_id)/divisor)
+                #     idx_end = (part+1)*int(len(str_id)/divisor)
+                #     parts_divisor.append(str_id[idx_start:idx_end])
                 if all(x == parts_divisor[0] for x in parts_divisor):
                     invalid_ids.add(i)
     return sum(invalid_ids)
