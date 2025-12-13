@@ -38,7 +38,7 @@ def puzzle_two(data):
     return result + (current_end - current_start + 1)
          
 
-print("Running Day 4 solutions:")
+print("Running Day 5 solutions:")
 print("Solving puzzle one example:")
 with open(os.path.join("data_files", "day_5", "example.txt")) as f:
     data = f.readlines()
