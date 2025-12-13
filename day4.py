@@ -22,7 +22,7 @@ def puzzle_one(data):
                     papers.append((y, x))
     for x,y in papers:
         data[x] = data[x][:y] + 'x' + data[x][y+1:]
-    print('\n'.join(''.join(row) for row in data))
+    # print('\n'.join(''.join(row) for row in data))
     return result, data
               
 def puzzle_two(data):
@@ -38,13 +38,13 @@ print("Running Day 4 solutions:")
 with open(os.path.join("data_files", "day_4", "example.txt")) as f:
     data = [x.strip() for x in f.readlines()]
     start = time.time()
-    print(f"Example puzzle one: {puzzle_one(data)}")
+    print(f"Example puzzle one: {puzzle_one(data)[0]}")
     print(f"Took {time.time() - start} seconds")
 
 with open(os.path.join("data_files", "day_4", "puzzle_1.txt")) as f:
     data = [x.strip() for x in f.readlines()]
     start = time.time()
-    print(f"Puzzle one: {puzzle_one(data)}")
+    print(f"Puzzle one: {puzzle_one(data)[0]}")
     print(f"Took {time.time() - start} seconds")
 
 with open(os.path.join("data_files", "day_4", "example.txt")) as f:
